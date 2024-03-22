@@ -114,6 +114,7 @@ const RATIGUEYA_ATAQUES = [
     { nombre: "🌿", id: "boton-tierra" }
 ]
 
+
 //se asignan ataques 
 hipodoge.ataques.push(...HIPODOGE_ATAQUES)
 capipepo.ataques.push(...CAPIPEPO_ATAQUES)
