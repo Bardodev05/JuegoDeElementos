@@ -1,0 +1,224 @@
+body {
+    background-color: #01475c;
+    font-family:'Times New Roman', Times, serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociales {
+    margin-top: 20px; 
+}
+
+.redes-sociales ul {
+    list-style: none;
+    padding: 0; 
+    border: 2px solid #6ee2cb;
+    width: fit-content; 
+    margin: auto; 
+    border-radius: 30px;
+}
+
+
+.redes-sociales ul li {
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+.redes-sociales ul li:last-child {
+    margin-right: 0; 
+}
+
+.redes-sociales ul li a {
+    color: #7c9899; 
+    font-size: 24px;
+    text-decoration: none; /
+}
+
+.redes-sociales ul li a:hover {
+    color: rgb(255, 140, 0); 
+}
+
+.title {
+    font-family: 'Rampart One', cursive;
+    text-align: center;
+    color: rgb(255, 140, 0);
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.title2 {
+    color: #6ee2cb;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0;
+}
+
+p {
+    text-align: center;
+    color: #6ee2cb;
+    margin-bottom: 20px;
+}
+
+section{
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:rgb(255, 140, 0);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;  
+}
+
+button:hover{
+    color: rgb(168, 21, 33); 
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+  
+}
+
+.tarjetas img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px 0;
+}
+
+#mapa{
+    border: 2px solid rgb(211, 183, 24);
+}
+
+input:checked+label {
+    background: #01233fd2;
+
+}
+input {
+    display: none;
+  }
+
+img {
+    width: 85px;
+    height: 70px;
+}
+
+span {
+    color: rgb(255, 140, 0);
+}
+
+label {
+    display: flex;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: #499e8d;
+    box-sizing: border-box;
+    border: 10px;
+    width: 220px;
+    height: 180px;
+    padding: 25px 65px;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+#mensajes {
+    background-color: #05364d;
+    width: 336px;
+    margin: 46px auto;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 45px;
+}
+
+#boton-reiniciar {
+    width: 236px;
+    height: 50px;
+    padding: auto;
+}
+
+/* CSS Grid */
+.ataques {
+    display: grid;
+    grid-template-columns: 95px 95px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#vidas-jugador,
+#vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+    column-gap: 10px;
+}
+
+.ataques-jugador,
+.ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+#mapa{
+    border: 2px solid rgb(245, 142, 111);
+}
+
+/* Estilos para el footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #05364d; 
+    border: 2px solid rgb(245, 142, 111);
+    border-radius: 48px;
+    padding: 2px; 
+    font-size: 12px; 
+}
+
+
+/* Responsive Design */
+@media(max-width: 560px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjetas {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ver-mapa {
+        margin-top: 20px; 
+    }
+    #mensajes{
+        padding: 10px;
+    }
+}
+

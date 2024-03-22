@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>🔥Mini Juego</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<nav class="redes-sociales">
+    <ul>
+        <li><a href="https://facebook.com"><i class=" facebook"></i>facebook</a></li>
+        <li><a href="https://mail.google.com/mail/u/0/?hl=es#inbox"><i class="Gmail"></i> Gmail</a></li>
+        <li><a href="https://instagram.com"><i class="instagram">instagram</i></a></li>
+    </ul>
+</nav>
+
+<section id="seleccionar-mascota">
+    <h1 class="title">juego de elementos 🔥💧🌿</h1>
+    <h2 class="title2">elige tu mascota:</h2>
+    <div id="contenedorTarjetas" class="tarjetas"></div>
+    <button id="boton-mascota">seleccionar</button>
+</section>
+
+<section id="ver-mapa">
+    <h1 class="title"><span id="mascota-nombre"></span></h1>
+    <canvas id="mapa"></canvas>
+    <div>
+        <button class="control" ontouchend="detenerMovimiento()" ontouchstart="moverArriba()">⬆</button>
+        <div>
+            <button class="control" ontouchend="detenerMovimiento()" ontouchstart="moverIzquierda()">⬅</button>
+            <button class="control" ontouchend="detenerMovimiento()" ontouchstart="moverAbajo()">⬇</button>
+            <button class="control" ontouchend="detenerMovimiento()" ontouchstart="moverDerecha()">➡</button>
+        </div>
+    </div>
+</section>
+
+<section id="seleccionar-ataque">
+    <h1 class="title">juego de elementos</h1>
+    <h2 class="title2">¡Ataca!</h2>
+    <div id="contenedorAtaques" class="tarjetas-ataques"></div>
+    <section id="mensajes">
+        <p id="resultado">Mucha suerte</p>
+        <section id="reiniciar">
+            <button id="boton-reiniciar">Reiniciar el juego</button>
+        </section>
+    </section>
+    <div class="ataques">
+        <div class="ataques-jugador">
+            <span id="vidas-jugador">0</span>
+            <span id="mascota-jugador"></span>
+            <div id="ataques-del-jugador"></div>
+        </div>
+        <div class="ataques-enemigo">               
+            <span id="vidas-enemigo">0</span>
+            <span id="mascota-enemigo"></span>
+            <div id="ataques-del-enemigo"></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>©HechoporBardo</p>
+</footer>
+
+<script src="miniJuego.js"></script>
+</body>
+</html>
+
